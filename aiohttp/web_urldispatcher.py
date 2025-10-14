@@ -59,8 +59,7 @@ __all__ = (
 
 if TYPE_CHECKING:
     from .web_app import Application
-
-    BaseDict = dict[str, str]
+    BaseDict = Mapping[str, str]
 else:
     BaseDict = dict
 
